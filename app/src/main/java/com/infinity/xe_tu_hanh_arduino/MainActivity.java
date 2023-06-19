@@ -72,14 +72,14 @@ public class MainActivity extends AppCompatActivity {
             speed -= 10;
             if (speed < 1) speed = 1;
             txtSpeed.setText(speed + "");
-            turnRobot("less");
+            turnRobot("LESS");
         });
 
         btnMore.setOnClickListener(view -> {
             speed += 10;
             if (speed > 255) speed = 255;
             txtSpeed.setText(speed + "");
-            turnRobot("more");
+            turnRobot("MORE");
         });
 
         btnDown.setOnTouchListener((v, event) -> {
